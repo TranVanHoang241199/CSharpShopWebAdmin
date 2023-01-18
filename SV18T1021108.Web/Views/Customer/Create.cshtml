@@ -1,0 +1,71 @@
+﻿@model SV18T1021108.DomainModel.Customer
+@{
+}
+
+<div class="box box-primary">
+
+    <form class="form-horizontal" action="~/customer/save" method="post">
+        @Html.HiddenFor(m => m.CustomerID)
+        <div class="box-body">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="CustomerName">Tên khách hàng<small class="text-danger"> * </small>:</label>
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(m => m.CustomerName, new { @class = "form-control", @autofocus = "autofocus" })
+                    @Html.ValidationMessageFor(m => m.CustomerName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="ContactName">Tên giao dịch<small class="text-danger"> * </small>:</label>
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(m => m.ContactName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.ContactName, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="Address">Địa chỉ<small class="text-danger"> * </small>:</label>
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Address, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="Country">Quốc gia<small class="text-danger"> * </small>:</label>
+                <div class="col-sm-10">
+                    @Html.DropDownListFor(m => m.Country, SelectListHeplper.Coutries(), new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Country, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="city">Thành phố  :</label>
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(m => m.City, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="PostalCode">Mã bưu chính  :</label>
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(m => m.PostalCode, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10 text-danger">
+                    @Html.ValidationSummary()
+                </div>
+            </div>
+        </div>
+        <div class="box-footer">
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa fa-save"></i> Lưu dữ liệu
+                    </button>
+                    <a href="~/customer" class="btn btn-warning">
+                        <i class="fa fa-ban"></i> Quay lại
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+

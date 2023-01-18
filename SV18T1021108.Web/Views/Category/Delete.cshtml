@@ -1,0 +1,50 @@
+﻿@model SV18T1021108.DomainModel.Category
+@{
+    ViewBag.Title = "Xoá loại hàng";
+}
+
+<div class="box box-danger">
+    <form class="form-horizontal" action="~/category/delete/@Model.CategoryID" method="post">
+
+        <div class="box-body">
+            <div class="box-header with-border">
+                <div class="form-group">
+                    <label class="control-label col-sm-2">Tên loại hàng:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static">@Model.CategoryName</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box-header with-border">
+                <div class="form-group">
+                    <label class="control-label col-sm-2">@Model.Description</label>
+                    <div class="col-sm-10">
+                        <p class="form-control-static">Rất là có hại cho sức khoẻ </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="box-footer">
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    @if (SV18T1021108.BusinessLayer.CommonDataService.InUsedCategory(Model.CategoryID))
+                    {
+                        <p class="text-danger">không được xóa hàng này</p>
+                    }
+                    else
+                    {
+                        <button type="submit" class="btn btn-danger">
+                            <i class="fa fa-trash"></i> Đồng ý xoá
+                        </button>
+                    }
+                    <a href="~/category" class="btn btn-warning">
+                        <i class="fa fa-ban"></i> Quay lại
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+

@@ -1,0 +1,12 @@
+D:\C#.Net_Project\Project_school\Project\SV18T1021108\SV18T1021108.DomainModel\bin\Debug\SV18T1021108.DomainModel.dll
+D:\C#.Net_Project\Project_school\Project\SV18T1021108\SV18T1021108.DomainModel\bin\Debug\SV18T1021108.DomainModel.pdb
+D:\C#.Net_Project\Project_school\Project\SV18T1021108\SV18T1021108.DomainModel\obj\Debug\SV18T1021108.DomainModel.csproj.AssemblyReference.cache
+D:\C#.Net_Project\Project_school\Project\SV18T1021108\SV18T1021108.DomainModel\obj\Debug\SV18T1021108.DomainModel.csproj.CoreCompileInputs.cache
+D:\C#.Net_Project\Project_school\Project\SV18T1021108\SV18T1021108.DomainModel\obj\Debug\SV18T1021108.DomainModel.dll
+D:\C#.Net_Project\Project_school\Project\SV18T1021108\SV18T1021108.DomainModel\obj\Debug\SV18T1021108.DomainModel.pdb
+C:\Users\hoang\Downloads\SV18T1021108\SV18T1021108.DomainModel\bin\Debug\SV18T1021108.DomainModel.dll
+C:\Users\hoang\Downloads\SV18T1021108\SV18T1021108.DomainModel\bin\Debug\SV18T1021108.DomainModel.pdb
+C:\Users\hoang\Downloads\SV18T1021108\SV18T1021108.DomainModel\obj\Debug\SV18T1021108.DomainModel.csproj.AssemblyReference.cache
+C:\Users\hoang\Downloads\SV18T1021108\SV18T1021108.DomainModel\obj\Debug\SV18T1021108.DomainModel.csproj.CoreCompileInputs.cache
+C:\Users\hoang\Downloads\SV18T1021108\SV18T1021108.DomainModel\obj\Debug\SV18T1021108.DomainModel.dll
+C:\Users\hoang\Downloads\SV18T1021108\SV18T1021108.DomainModel\obj\Debug\SV18T1021108.DomainModel.pdb
